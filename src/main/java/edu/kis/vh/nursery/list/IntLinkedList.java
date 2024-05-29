@@ -1,10 +1,13 @@
 package edu.kis.vh.nursery.list;
 
+import com.sun.tools.javac.comp.Todo;
+
 public class IntLinkedList {
 
     private static final int IF_EMPTY = -1;
     private Node last;
     private int i;
+    //TODO usnięcie nieużywanego i
 
     public void push(int i) {
         if (last == null)
@@ -20,6 +23,7 @@ public class IntLinkedList {
         return last == null;
     }
 
+    //TODO metoda zawsze zwraca false
     public boolean isFull() {
         return false;
     }
